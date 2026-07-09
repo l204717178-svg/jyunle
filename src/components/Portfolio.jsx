@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { X, ExternalLink, Play, ChevronLeft, ChevronRight } from 'lucide-react'
 import coverTravel from '../assets/images/cover-travel.jpg'
 import coverUrban from '../assets/images/cover-urban.jpg'
-import coverDuolingo from '../assets/images/cover-duolingo.png'
+import coverDuolingo2025 from '../assets/images/cover-duolingo-2025.jpg'
 import cover2021 from '../assets/images/cover-2021.jpg'
 import coverFootball from '../assets/images/cover-football.jpg'
 
@@ -13,6 +13,16 @@ const galleryImages = Array.from({ length: 24 }, (_, i) => `/portfolio-gallery/g
 
 // Mock Data - Replace with actual user content
 const projects = [
+    {
+        id: 3,
+        title: "【2025年终总结】先搓个开头出来",
+        category: "Product",
+        description: "今年经历了很多，毕业、旅行、实习，一切都是新的开始。",
+        image: coverDuolingo2025,
+        videoUrl: "https://www.bilibili.com/video/BV1jUAjzvEiS/",
+        bvid: "BV1jUAjzvEiS",
+        link: "https://www.bilibili.com/video/BV1jUAjzvEiS/"
+    },
     {
         id: 1,
         title: "【2022年终总结】20岁的2023年会更好的吧",
@@ -32,14 +42,6 @@ const projects = [
         videoUrl: "https://www.bilibili.com/video/BV17u4m1N7Ae",
         bvid: "BV17u4m1N7Ae",
         link: "https://www.bilibili.com/video/BV17u4m1N7Ae"
-    },
-    {
-        id: 3,
-        title: "多邻国产品体验报告及竞品分析",
-        category: "Product",
-        description: "多邻国的产品体验报告及竞品分析，深度剖析其游戏化学习机制。",
-        image: coverDuolingo,
-        link: "https://www.notion.so/19eb10f81b6a8031a61af319e705e1d7?source=copy_link"
     },
     {
         id: 4,
@@ -243,7 +245,7 @@ const Portfolio = () => {
                             <div style={{ height: '60vh', position: 'relative', background: '#000', overflow: 'hidden', flex: 'none' }}>
                                 {selectedProject.bvid ? (
                                     <iframe
-                                        src={`//player.bilibili.com/player.html?bvid=${selectedProject.bvid}&page=1&high_quality=1&danmaku=0`}
+                                        src={`//player.bilibili.com/player.html?bvid=${selectedProject.bvid}&page=1&high_quality=1&danmaku=0&autoplay=1`}
                                         style={{ width: '100%', height: '100%', border: 'none', position: 'absolute', top: 0, left: 0 }}
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen

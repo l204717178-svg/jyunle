@@ -80,14 +80,22 @@ const Experience = () => {
 
                 <TimelineItem
                     isLeft={true}
-                    date="2025.12 - Present"
+                    date="2026.05 - 2026.09"
+                    title="vivo (维沃移动通信有限公司)"
+                    subtitle="OS搜索产品实习生"
+                    description="负责全局搜索体验升级与增长需求；主导引入 AI 自动化评测工作流；通过看板数据提升北极星指标。"
+                />
+
+                <TimelineItem
+                    isLeft={false}
+                    date="2026.01 - 2026.04"
                     title="Vivix (灵动科技)"
                     subtitle="产品运营实习生"
                     description="针对模型训练中抽象需求难以匹配平台内容痛点，设计内容场景映射方法论；针对基座模型形似神不似痛点，设计验证了20条素材+0.6%参数的LoRA技术路径。"
                 />
 
                 <TimelineItem
-                    isLeft={false}
+                    isLeft={true}
                     date="2025.09 - 2026.10"
                     title="City University of Hong Kong"
                     subtitle="机械工程 (硕士)"
@@ -95,7 +103,7 @@ const Experience = () => {
                 />
 
                 <TimelineItem
-                    isLeft={true}
+                    isLeft={false}
                     date="2025.03 - 2025.07"
                     title="SenseTime (商汤科技)"
                     subtitle="大模型评测实习生"
@@ -103,7 +111,7 @@ const Experience = () => {
                 />
 
                 <TimelineItem
-                    isLeft={false}
+                    isLeft={true}
                     date="2024.06 - 2024.09"
                     title="中国移动杭州研究院"
                     subtitle="研发实习生"
@@ -111,7 +119,7 @@ const Experience = () => {
                 />
 
                 <TimelineItem
-                    isLeft={true}
+                    isLeft={false}
                     date="2021.09 - 2025.06"
                     title="UESTC (电子科技大学)"
                     subtitle="自动化 (本科)"
